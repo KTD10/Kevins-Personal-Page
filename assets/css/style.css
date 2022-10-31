@@ -11,14 +11,14 @@
     font-size: 20px;
     background-color: #FDF8F5;
     color: #4F4846;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: space-between; */
+     height: 100%; 
   }
 
   html {
-    height: 100vh;
+    /* height: 100vh; */
   }
 
   h1,
@@ -29,6 +29,7 @@
   
   main {
     padding: 60px 0;
+    
   }
   
   li {
@@ -71,14 +72,19 @@
     display: block;
     margin: 20px auto;
   }
+  #contact, #about-me{
+    height: 100vh;
+  }
+  
   
   section {
     margin-bottom: 0;
     padding: 20px 10px 40px 10px;
     border-top: 3px solid #14dae0;
     background-color:  #ffffff;
+    
   }
-  
+
   form {
     /* Center the form on the page */
     margin: 0 auto;
@@ -130,8 +136,8 @@
   .imgClass{
     width: 250px;
     height: 250px;
-    background-color: #ff0000;
     transition: transform .2s;
+    border-radius: 50%;
   }
 
   .imgContainer{
@@ -144,35 +150,65 @@
   }
 
   .imgText{
-    max-width: 300px;
+    max-width: 250px;
     position: absolute;
-    left: -110%;
+    left: -130%;
     top: 50%;
     transform: translate(0px, -50%);
-    display: hidden;
+    display: none;
   }
 
   .imgText1{
-    max-width: 300px;
+    max-width: 250px;
     position: absolute;
-    top: 130%;
+    top: 160%;
     transform: translate(0px, -50%);
-    display: hidden;
+    display: none;
 
   }
 
   .imgText2{
-    max-width: 300px;
+    max-width: 250px;
     position: absolute;
-    right: -110%;
+    right: -130%;
     top: 50%;
     transform: translate(0px, -50%);
-    display: hidden;
+    display: none;
   }
 
-  li:nth-child(1) > p{
-    left: -110%;
-    /* right: 0; */
-    top: 50%;
-    transform: translate(0px, -50%);
+  .imgClass:hover + .imgText{
+    display: block;
+  }
+
+  .imgClass:hover + .imgText1{
+    display: block;
+  }
+
+  .imgClass:hover + .imgText2{
+    display: block;
+  }
+
+  .intro{
+    height: 100%;
+    text-align: center;
+    font:700;
+    font-size: 60px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+    .subText{
+        text-align: bottom;
+    }
+  
+  .myProjects{
+    height: 100%;
+    text-align: center;
+    font-size: 45px; 
+    font: #555
+
+  }
+  #projects{
+    font: black;
   }
