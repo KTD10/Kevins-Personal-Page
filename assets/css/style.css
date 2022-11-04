@@ -4,6 +4,7 @@
     padding:0;  
   }
   
+
   /* Element Selectors */
   body {
     position: relative;
@@ -15,10 +16,13 @@
     /* flex-direction: column; */
     /* justify-content: space-between; */
      height: 100%; 
+     text-decoration: none;
   }
 
-  html {
-    /* height: 100vh; */
+  a{
+    text-decoration: none;
+    color:#0e0d0d;
+    font-size: 25px;
   }
 
   h1,
@@ -38,10 +42,12 @@
     text-decoration: none;
   }
   
-  a {
+  .headerLink{
     text-decoration: none;
     color: #FDF8F5;
   }
+
+
   
   header,
   footer {
@@ -72,12 +78,20 @@
     display: block;
     margin: 20px auto;
   }
-  #contact, #about-me{
-    height: 100vh;
+  #contact{
+    padding-top: 100px;
+    height:45vh;
+  }
+
+   #fun-facts{
+    padding-bottom: 5%;
+
   }
   
   
-  section {
+   section { 
+    height: 600px;
+    height: 100%;
     margin-bottom: 0;
     padding: 20px 10px 40px 10px;
     border-top: 3px solid #14dae0;
@@ -139,6 +153,14 @@
     transition: transform .2s;
     border-radius: 50%;
   }
+  .imgClass2{
+    width: 250px;
+    height: 250px;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+  }
 
   .imgContainer{
     position: relative;
@@ -176,6 +198,7 @@
     display: none;
   }
 
+  /* When images are hovered over the images expand and show text */
   .imgClass:hover + .imgText{
     display: block;
   }
@@ -203,12 +226,44 @@
     }
   
   .myProjects{
-    height: 100%;
+    text-decoration: none;
+    height: 20%;
     text-align: center;
-    font-size: 45px; 
+    font-size: 40px; 
     font: #555
 
   }
   #projects{
     font: black;
+    text-decoration: none;
   }
+
+  .projecLinks{
+    text-decoration: none;
+    color:#0e0d0d;
+    font-size: 25px;
+  }
+  .aboutMe{
+    padding-top:50px;
+    text-align:center;
+    height: 250px;
+    text-align: left;
+    font-size: 45px;
+
+  }
+
+  .message{
+    font-size: 30px;
+  }
+  
+
+    
+  @media screen and (max-width:500px) {
+    .imgList{
+    flex-direction:column;
+    align-items: center;
+    display:flex; 
+
+    }
+  }
+
