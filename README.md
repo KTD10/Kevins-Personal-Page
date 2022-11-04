@@ -9,3 +9,15 @@ Some challenges I faced while making this project was, quite simply, getting cre
 
 ## Lessons Learned
 After completing this project I learned a multitude of things. For example, when to ask for help. Initially I was convinced to solve all problems myself and not ask for help until the bitter end. The result: I did not complete this project until the last second. Lesson learned: ask for help when help is needed. 
+
+
+
+
+
+### Links: 
+
+ https://ktd10.github.io/Kevins-Personal-Page/
+ 
+ 
+ 
+ ![Screenshot (13)](https://user-images.githubusercontent.com/110429983/199883161-1283b34f-4b9c-402f-a84b-2911830f4eb2.png)
